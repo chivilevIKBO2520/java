@@ -1,0 +1,121 @@
+package ru.mirea.The_Losst.Ball1;
+import java.lang.*;
+
+public class Ball {
+private String color;
+private int cost;
+private double radius;
+
+public Ball(String color, int cost, double radius) {
+this.color = color;
+this.cost = cost;
+this.radius = radius;
+}
+
+public String getColor() {
+return color;
+}
+
+public void setColor(String color) {
+this.color = color;
+}
+
+public int getCost() {
+return cost;
+}
+
+public void setCost(int cost) {
+this.cost = cost;
+}
+
+public double getRadius() {
+return radius;
+}
+
+public void setRadius(double radius) {
+this.radius = radius;
+}
+
+@Override
+public String toString() {
+return "Ball{" +
+"color='" + color + '\'' +
+", cost=" + cost +
+", radius=" + radius +
+'}';
+}
+}
+package ru.mirea.The_Losst.Ball1;
+import java.lang.*;
+
+public class Main {
+public static void main(String[] args) {
+Ball test = new Ball("Blue", 120, 5.2);
+System.out.println(test);
+}
+}
+package ru.mirea.The_Losst.Book;
+
+public class Book {
+private String dateOfCreating;
+private String avtor;
+private String cost;
+private String name;
+
+public Book(String dateOfCreating, String avtor, String cost, String name) {
+this.dateOfCreating = dateOfCreating;
+this.avtor = avtor;
+this.cost = cost;
+this.name = name;
+}
+
+public String getDateOfCreating() {
+return dateOfCreating;
+}
+
+public void setDateOfCreating(String dateOfCreating) {
+this.dateOfCreating = dateOfCreating;
+}
+
+public String getAvtor() {
+return avtor;
+}
+
+public void setAvtor(String avtor) {
+this.avtor = avtor;
+}
+
+public String getCost() {
+return cost;
+}
+
+public void setCost(String cost) {
+this.cost = cost;
+}
+
+public String getName() {
+return name;
+}
+
+public void setName(String name) {
+this.name = name;
+}
+
+@Override
+public String toString() {
+return "Book{" +
+"dateOfCreating='" + dateOfCreating + '\'' +
+", avtor='" + avtor + '\'' +
+", cost='" + cost + '\'' +
+", name='" + name + '\'' +
+'}';
+}
+}
+package ru.mirea.The_Losst.Book;
+
+public class Main {
+public static void main(String[] args) {
+Book b1 = new Book("24.08.1999", "Esenin", "1500$", "Шантарам");
+System.out.println(b1);
+}
+}
